@@ -15,7 +15,8 @@
     "build:types": "tsc -b ./tsconfig.types.json",
     "build:js": "rollup -c rollup.config.ts --configPlugin rollup-plugin-typescript2 --forceExit",
     "build": "npm run clean:dist && npm run build:types && npm run build:js",
-    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix"
+    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
+    "test": "npm run build && ava"
   },
   "author": "",
   "license": "ISC",
