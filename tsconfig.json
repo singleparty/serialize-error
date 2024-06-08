@@ -1,0 +1,22 @@
+{
+  "include": ["./src/*"],
+  "exclude": ["tests"],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "allowJs": true /* 允许编译 js 文件 */,
+    "removeComments": true /* 输出不包含注释 */,
+    "esModuleInterop": true,
+    "noImplicitAny": true /* 检查隐含 any 类型的表达式和声明 */,
+    "strictNullChecks": false /* 严格空检查. */,
+    "noUnusedLocals": false /* 检查无用的变量. */,
+    "noImplicitOverride": true,
+    "resolveJsonModule": true,
+    "useUnknownInCatchVariables": false,
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "sourceMap": true,
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  }
+}

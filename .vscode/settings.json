@@ -1,0 +1,10 @@
+{
+  // 要格式化的文件类型
+  "eslint.validate": ["typescript", "typescriptreact", "javascript", "tsx", "vue", "html"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true
+}
